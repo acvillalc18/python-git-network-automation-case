@@ -181,6 +181,8 @@ print(f"Routers: {router_total}")
 print(f"Switches: {switch_total}")
 print(f"Firewalls: {firewall_total}")
 
+print(f"Number of network devices: {len(network_inventory)}")
+
 print("\n---Average Uptime---")
 
 total_uptime = sum(device["uptime_days"] for device in network_inventory)
